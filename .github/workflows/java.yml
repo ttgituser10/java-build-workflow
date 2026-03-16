@@ -1,1 +1,20 @@
+name: Java Build
+on:
+  push:
+    branches: main
 
+jobs:
+  compile-and-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Java
+        uses: actions/checkout@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      - name: Compile Java
+        run: javac HelloWorld.java
+      - name: Run Java
+        run: java HelloWorld
