@@ -15,6 +15,6 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Compile Java
-        run: javac HelloWorld.Java
+        run: javac HelloWorld.java
       - name: Run Java
         run: java HelloWorld
