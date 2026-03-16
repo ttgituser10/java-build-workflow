@@ -1,7 +1,7 @@
 name: Java Build
 on:
   push:
-    branches: main
+    branches: [ main ]
 
 jobs:
   compile-and-run:
